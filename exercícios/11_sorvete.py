@@ -33,10 +33,10 @@ while etapa != 4:
             conta += 1.00 
             etapa = 4
         elif opcao_cobertura == "morango":
-            conta += 2.50
+            conta += 1.50
             etapa = 4
         elif opcao_cobertura == "chocolate":
-            conta += 4.00
+            conta += 1.50
             etapa = 4
         elif opcao_cobertura == "sem cobertura":
             conta += 0.00
@@ -45,4 +45,27 @@ while etapa != 4:
             print("escolha uma opção de cobertura")
 
 print("Sua conta deu:", conta)
+
 # %%
+
+opcao = input("Faça se pedido! Escolha uma base entre casquinha (R$1,00), cascão (R$2,50), cestinha (R$4,00)")
+opcao = opcao.lower()
+
+sabor = input("Agora escolha o sabor entre: morango, creme ou chocolate")
+sabor = sabor.lower()
+
+cobertura = input("Finalize com a cobertura: Caramelo (R$1,50), morango (R$1,50), chocolate (R$1,50), sem cobertura (R$0,00)")
+cobertura = cobertura.lower()
+
+valor = 0
+if opcao == "casquinha":
+    valor = 1
+elif opcao == "cascão":
+    valor = 2.50
+elif opcao == "cestinha":
+    valor = 4
+
+if cobertura in ["caramelo", "morango", "chocolate"]:
+    valor += 1.5
+txt = f"seu sorvete {opcao} de {sabor} com cobertura de {cobertura} custou {valor:.2f}"
+print(txt)

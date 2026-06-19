@@ -12,3 +12,10 @@ input(p1)
 input(p2)
 input(p3)
 input(p4)
+
+
+#%%
+input("Era uma vez...")
+input("...a chapéuzinho vermelho.")
+input("...que vivia em uma cabana.")
+input("...no meio da floresta.")

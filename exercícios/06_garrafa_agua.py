@@ -23,3 +23,15 @@ if conta == 0:
 
 else:
     print("sua conta deu R$" , conta)
+
+    #%%
+
+escolha = input("escolha a sua água para comprar: (1) água mineral com gás / (2) água mineral sem gás")
+if escolha == "1":
+    print("sua conta deu R$1,50")
+
+elif escolha == "2":
+    print("sua conta deu R$2,50")
+
+else:
+    print("entre ccom um valor válido")

@@ -22,3 +22,24 @@ else:
     qtde = int(qtde)
     valor_total = valor_item * qtde
     print("sua conta deu R$" , valor_total)
+
+    #%%
+texto = """"escolha a sua água para comprar
+(1) água mineral com gás - R$ 1.50
+(2) água mineral sem gás - R$ 2.50
+"""
+
+opcao = input(texto)
+qtde = int(input("Quantas garrafas? "))
+
+if opcao == "1":
+    valor = 1.5 * qtde
+    print("sua conta deu R$" , valor)
+
+
+elif opcao == "2":
+    valor = 2.5 * qtde
+    print("sua conta deu R$" , valor)
+
+else:
+    print("escolha um dado válido")
